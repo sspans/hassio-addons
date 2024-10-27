@@ -1,0 +1,17 @@
+name: "lldpd"
+version: "1.0.0"
+slug: "lldpd"
+description: "Adds LLDP support to Home Assistant"
+url: "https://github.com/sspans/hassio-addons/tree/main/lldpd"
+init: false
+startup: "services"
+host_network: true
+privileged: [ "NET_ADMIN", "NET_RAW" ]
+hassio_api: true
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+image: "ghcr.io/sspans/hassio-addons-lldpd-{arch}"

@@ -1,0 +1,49 @@
+#include <tunables/global>
+
+/usr/sbin/lldpd {
+  #include <abstractions/base>
+  #include <abstractions/nameservice>
+
+  capability chown,
+  capability dac_override,
+  capability fowner,
+  capability fsetid,
+  capability kill,
+  capability net_admin,
+  capability net_raw,
+  capability setgid,
+  capability setuid,
+  capability sys_chroot,
+  capability sys_module,
+
+  # Need to receive/send raw packets
+  network packet raw,
+
+  /usr/sbin/lldpd mr,
+  /run/systemd/notify w,
+
+  # Ability to run lldpcli for self-configuration
+  /usr/sbin/lldpcli rix,
+  /etc/lldpd.d/ r,
+  /etc/lldpd.d/* r,
+  /etc/lldpd.conf r,
+
+  # PID file and socket
+  /var/run/lldpd.pid rw,
+  /var/run/lldpd.socket rw,
+
+  # Chroot setup
+  /var/run/lldpd w,
+  /var/run/lldpd/etc/ rw,
+  /var/run/lldpd/etc/localtime rw,
+
+  # Gather system description
+  /etc/os-release r,
+
+  # Gather network information
+  /proc/sys/net/ipv4/ip_forward r,
+  /proc/net/bonding/* r,
+  /proc/self/net/bonding/* r,
+  /sys/devices/virtual/dmi/** r,
+  /sys/devices/pci**/net/*/ifalias r,
+}
