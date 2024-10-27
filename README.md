@@ -12,7 +12,7 @@ This repository contains the following add-ons
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-_Example add-on to use as a blueprint for new add-ons._
+_Adds LLDP support to Home Assistant._
 
 <!--
 
