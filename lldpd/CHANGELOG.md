@@ -1,7 +1,11 @@
 
+## 1.0.4
+
+- Add the socket lock to AppArmor
+
 ## 1.0.3
 
-- Update run directory in AppArmor
+- Update pid / socket paths in AppArmor
 
 ## 1.0.2
 
