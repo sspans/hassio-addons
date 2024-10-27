@@ -1,5 +1,5 @@
 name: "lldpd"
-version: "1.0.1"
+version: "1.0.2"
 slug: "lldpd"
 description: "Adds LLDP support to Home Assistant"
 url: "https://github.com/sspans/hassio-addons/tree/main/lldpd"

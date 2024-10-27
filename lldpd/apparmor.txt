@@ -59,13 +59,13 @@ profile lldpd flags=(attach_disconnected,mediate_deleted) {
     /etc/lldpd.conf r,
   
     # PID file and socket
-    /var/run/lldpd.pid rw,
-    /var/run/lldpd.socket rw,
+    /run/lldpd.pid rw,
+    /run/lldpd.socket rw,
   
     # Chroot setup
-    /var/run/lldpd w,
-    /var/run/lldpd/etc/ rw,
-    /var/run/lldpd/etc/localtime rw,
+    /run/lldpd w,
+    /run/lldpd/etc/ rw,
+    /run/lldpd/etc/localtime rw,
   
     # Gather system description
     /etc/os-release r,
