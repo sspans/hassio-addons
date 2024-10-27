@@ -1,4 +1,8 @@
 
+## 1.0.5
+
+- Small update to AppArmor configuration
+
 ## 1.0.4
 
 - Add the socket lock to AppArmor

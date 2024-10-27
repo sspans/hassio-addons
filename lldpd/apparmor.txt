@@ -27,6 +27,8 @@ profile lldpd flags=(attach_disconnected,mediate_deleted) {
   # Access to options.json and other files within your addon
   /data/** rw,
 
+  /etc/lldpd.conf rw,
+
   # Start new profile for service
   /usr/sbin/lldpd cx -> lldpd,
 
@@ -61,7 +63,7 @@ profile lldpd flags=(attach_disconnected,mediate_deleted) {
     # PID file and socket
     /run/lldpd/lldpd.pid rw,
     /run/lldpd/lldpd.socket rw,
-    /run/lldpd/lldpd.socket.lock rw,
+    /run/lldpd/lldpd.socket.lock rwk,
   
     # Chroot setup
     /run/lldpd w,
