@@ -59,8 +59,8 @@ profile lldpd flags=(attach_disconnected,mediate_deleted) {
     /etc/lldpd.conf r,
   
     # PID file and socket
-    /run/lldpd.pid rw,
-    /run/lldpd.socket rw,
+    /run/lldpd/lldpd.pid rw,
+    /run/lldpd/lldpd.socket rw,
   
     # Chroot setup
     /run/lldpd w,
