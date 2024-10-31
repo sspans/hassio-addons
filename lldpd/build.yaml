@@ -1,14 +1,3 @@
-# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
-build_from:
-  aarch64: "ghcr.io/home-assistant/aarch64-base:3.20"
-  amd64: "ghcr.io/home-assistant/amd64-base:3.20"
-  armhf: "ghcr.io/home-assistant/armhf-base:3.20"
-  armv7: "ghcr.io/home-assistant/armv7-base:3.20"
-  i386: "ghcr.io/home-assistant/i386-base:3.20"
-labels:
-  org.opencontainers.image.title: "Home Assistant Add-on: LLDPd"
-  org.opencontainers.image.description: "Adds LLDP support to Home Assistant"
-  org.opencontainers.image.source: "https://github.com/sspans/hassio-addons"
-  org.opencontainers.image.licenses: "Apache License 2.0"
-args:
-  TEMPIO_VERSION: "2021.09.0"
+codenotary:
+  signer: notary@home-assistant.io
+  base_image: notary@home-assistant.io
