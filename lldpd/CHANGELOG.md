@@ -1,4 +1,8 @@
 
+## 1.0.6
+
+- Enable codenotary support
+
 ## 1.0.5
 
 - Small update to AppArmor configuration
