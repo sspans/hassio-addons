@@ -10,6 +10,3 @@ labels:
   org.opencontainers.image.description: "Adds LLDP support to Home Assistant"
   org.opencontainers.image.source: "https://github.com/sspans/hassio-addons"
   org.opencontainers.image.licenses: "Apache License 2.0"
-codenotary:
-  signer: sten@blinkenlights.nl
-  base_image: notary@home-assistant.io

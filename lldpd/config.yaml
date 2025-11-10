@@ -3,7 +3,6 @@ version: "1.0.6"
 slug: "lldpd"
 description: "Adds LLDP support to Home Assistant"
 url: "https://github.com/sspans/hassio-addons/tree/main/lldpd"
-codenotary: sten@blinkenlights.nl
 init: false
 startup: "services"
 host_network: true
